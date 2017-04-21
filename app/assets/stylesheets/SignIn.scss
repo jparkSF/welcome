@@ -1,0 +1,172 @@
+.container {
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.container-loaded {
+    opacity: 1;
+}
+
+
+
+/******************************************
+main
+******************************************/
+body {
+  background: url(bg_always_16x9.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+
+/******************************************
+Index page.
+******************************************/
+
+.content_center{
+  text-align: center;
+  margin: auto;
+
+  width: 400px;
+  height: 500px;
+  margin-top: 10%;
+}
+.button{
+  width: 400px !important;
+  height: 70px;
+  font-size: 2em !important;
+  line-height: 1.6 !important;
+
+}
+
+
+
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 200px;
+  width: auto;
+
+}
+
+.content_index{
+  text-align: center;
+  margin: auto;
+
+  width: 600px;
+  height: 500px;
+  margin-top: 10%;
+}
+.index > button {
+  margin-left: 100px;
+}
+
+span#message_index{
+  font-size: 3.5em !important;
+}
+
+/******************************************
+New page.
+******************************************/
+
+.outer{
+  padding-top:50px;
+
+
+
+}
+.inner{
+  margin:10px;
+}
+
+.content {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+    font-size: 1.5em;
+
+    p#text > input{
+      padding: 12px;
+      border: 1px solid #e9eff3;
+      border-radius: 3px;
+      width: 100%;
+      background: transparentize(white, 0.5);
+    }
+
+    select{
+      width: 100%;
+      height: 56px;
+      border: 1px solid #e9eff3;
+      background: transparentize(white, 0.5);
+    }
+
+    #button{
+      font-size: 1.4em !important;
+    }
+
+}
+
+/******************************************
+Contirm page.
+******************************************/
+
+.content_confirm{
+  text-align: center;
+  margin: auto;
+
+  width: 600px;
+  height: 500px;
+  margin-top: 10%;
+
+}
+
+.row1{
+  font-size: 1em;
+  width: 250px !important;
+}
+
+.row2{
+  font-size: 1.8em;
+  width: 350px;
+}
+
+
+.confirm_table{
+
+  margin-top:15%;
+
+  text-align: left !important;
+
+
+}
+
+.button_confirm{
+  width: 400px !important;
+  height: 70px;
+  font-size: 1.5em !important;
+  line-height: 1.6 !important;
+  margin-left: 100px;
+  margin-top: 10px;
+
+}
+
+/******************************************
+Thankyou page.
+******************************************/
+.content_thankyou{
+  margin-top: 500px !important;
+
+}
+span#message{
+  font-size: 3.1em !important;
+}

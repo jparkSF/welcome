@@ -1,0 +1,47 @@
+<div class=" content">
+  <div class="confirm_table content_confirm " >
+    <br><br><br><br>
+    <table>
+      <tr>
+        <td class="row1">이름:</td>
+        <td class="row2"><%= @post.name %></td>
+      </tr>
+      <tr>
+        <td class="row1">연령대:</td>
+        <td class="row2"><%= @post.age %></td>
+      </tr>
+      <tr>
+        <td class="row1">전화번호:</td>
+        <td class="row2">
+          <% if @post.phone.length > 0 %>
+          <%= @post.phone.insert(3, '-').insert(7, '-') %>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <td class="row1">이메일:</td>
+        <td class="row2"><%= @post.email %></td>
+      </tr>
+      <tr>
+        <td class="row1">어떻게 알고 오셨나요?</td>
+        <td class="row2"><%= @post.how %></td>
+      </tr>
+      <tr>
+        <td class="row1">소속교회:</td>
+        <td class="row2"><%= @post.church %></td>
+      </tr>
+
+    </td>
+
+  </table>
+
+</br></br><br><br>
+
+
+
+
+<%= link_to "완료", posts_thankyou_path, {:class => "btn btn-lg button_confirm btn-success"}%>
+</br>
+  <%= link_to '수정', edit_post_path(@post),{:class => "btn btn-lg button_confirm btn-danger"} %>
+</div>
+</div>
