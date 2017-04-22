@@ -170,3 +170,51 @@ Thankyou page.
 span#message{
   font-size: 3.1em !important;
 }
+
+
+
+/******************************************
+Log page.
+******************************************/
+
+.content_log{
+  width: 90%;
+  margin: 5%;
+
+
+  table{
+    width: 100%;
+
+  }
+  tr#heading{
+    border-bottom:thin solid grey;
+  }
+
+  tr{
+    border-bottom:thin dotted grey;
+
+  }
+  #name{
+    width: 10%;
+  }
+  #age{
+    width: 10%;
+  }
+  #phone{
+    width: 13%;
+  }
+  #email{
+    width: 20%;
+  }
+  #church{
+    width: 15%;
+  }
+  .simple_link{
+    font-size: .5em !important;
+  }
+  .data{
+    font-size: .7em;
+    color:#a15a5a;
+    vertical-align: middle;
+  }
+}

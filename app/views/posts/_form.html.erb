@@ -3,7 +3,7 @@
     <%= form_for @post, html: {multipart: true} do |f| %>
     <p id="text">
       이름:</br>
-      <%= f.text_field :name %><br />
+      <%= f.text_field :name, :required => true %><br />
     </p>
     <p id="text">
       연령대:</br>
@@ -11,11 +11,11 @@
     </p>
     <p id="text">
       전화번호:</br>
-      <%= f.text_field :phone %><br />
+      <%= f.text_field :phone, placeholder: "*numbers only" %><br />
     </p>
     <p id="text">
       이메일:</br>
-      <%= f.text_field :email %><br />
+      <%= f.text_field :email,:required => true  %><br />
     </p>
     <p id="text">
       어떻게 알고 오셨나요?</br>

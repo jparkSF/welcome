@@ -1,5 +1,42 @@
-<h1>This is log page</h1>
-<div class="">
+<div class="content">
+
+
+
+<div class="content_log content">
+<h1>Log Page</h1>
+  <table>
+    <thead>
+      <tr id="heading">
+        <th id="name">이름</th>
+        <th id="age">연령대</th>
+        <th id="phone">전화번호</th>
+        <th id="email">이메일</th>
+        <th id="how">어떻게 알고 왔나요?</th>
+        <th id="church">소속교회</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr class="data">
+          <td><%= post.name %></td>
+          <td><%= post.age %></td>
+          <td><%= post.phone %></td>
+          <td><%= post.email %></td>
+          <td><%= post.how %></td>
+          <td><%= post.church %></td>
+          <td><%= link_to 'Show', post, {:class=>"simple_link"} %></td>
+          <td><%= link_to 'Edit', edit_post_path(post), {:class=>"simple_link"} %></td>
+          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' },:class=>"simple_link"%></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</br>
+
     <%= link_to 'Back to Main', posts_path %>
+
+</div>
 
 </div>
