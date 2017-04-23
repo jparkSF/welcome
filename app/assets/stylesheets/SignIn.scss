@@ -34,7 +34,8 @@ Index page.
 
   width: 400px;
   height: 500px;
-  margin-top: 10%;
+
+  margin-top: 5%;
 }
 .button{
   width: 400px !important;
@@ -62,6 +63,7 @@ Index page.
   width: 600px;
   height: 500px;
   margin-top: 10%;
+
 }
 .index > button {
   margin-left: 100px;
@@ -86,6 +88,7 @@ New page.
 }
 
 .content {
+    margin-top: 30px;
     display: block;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -93,7 +96,7 @@ New page.
     font-weight: 600;
     color: black;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1em;
 
     p#text > input{
       padding: 12px;
@@ -105,13 +108,13 @@ New page.
 
     select{
       width: 100%;
-      height: 56px;
+      height: 46px;
       border: 1px solid #e9eff3;
       background: transparentize(white, 0.5);
     }
 
     #button{
-      font-size: 1.4em !important;
+
     }
 
 }
@@ -153,7 +156,7 @@ Contirm page.
 .button_confirm{
   width: 400px !important;
   height: 70px;
-  font-size: 1.5em !important;
+  font-size: 2em !important;
   line-height: 1.6 !important;
   margin-left: 100px;
   margin-top: 10px;
@@ -164,7 +167,7 @@ Contirm page.
 Thankyou page.
 ******************************************/
 .content_thankyou{
-  margin-top: 500px !important;
+  margin-top: 350px !important;
 
 }
 span#message{
