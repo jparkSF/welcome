@@ -26,6 +26,9 @@
           <td><%= post.email %></td>
           <td><%= post.how %></td>
           <td><%= post.church %></td>
+          <td><%= link_to 'Show', post, {:class=>"simple_link"} %></td>
+          <td><%= link_to 'Edit', edit_post_path(post), {:class=>"simple_link"} %></td>
+          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' },:class=>"simple_link"%></td>
         </tr>
       <% end %>
     </tbody>

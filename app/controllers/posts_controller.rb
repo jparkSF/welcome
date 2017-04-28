@@ -31,6 +31,10 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def admin
+    @posts = Post.all
+  end
+
 
   # POST /posts
   # POST /posts.json
