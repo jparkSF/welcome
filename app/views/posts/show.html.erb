@@ -2,7 +2,7 @@
   <div class="confirm_table content_confirm " >
 
     <h1>기입하신 정보가 맞습니까?</h1>
-    </br> 
+    </br>
     <table>
       <tr>
         <td class="row1">이름:</td>
@@ -12,14 +12,7 @@
         <td class="row1">연령대:</td>
         <td class="row2"><%= @post.age %></td>
       </tr>
-      <tr>
-        <td class="row1">전화번호:</td>
-        <td class="row2">
-          <% if @post.phone.length > 0 %>
-          <%= @post.phone.insert(3, '-').insert(7, '-') %>
-          <% end %>
-        </td>
-      </tr>
+  
       <tr>
         <td class="row1">이메일:</td>
         <td class="row2"><%= @post.email %></td>
