@@ -14,7 +14,8 @@ module ApplicationHelper
       %w(친구권유 친구권유),
       %w(포스터 포스터),
       %w(소속교회광고 소속교회광고),
-      %w(SNS홍보 SNS홍보)
+      %w(SNS홍보 SNS홍보),
+      %w(그외 그외)
     ]
   end
 

@@ -1,3 +1,17 @@
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  var availableTags = [
+    "예수인교회",
+    "SF사랑의교회",
+    "금문교회"
+  ];
+  $( "#tags" ).autocomplete({
+    source: availableTags
+  });
+} );
+</script>
 <div class="content">
   <div id="create_new_form">
     <%= form_for @post, html: {multipart: true} do |f| %>
@@ -10,10 +24,6 @@
       <%= f.select :age, age, { include_blank: true } %>
     </p>
     <p id="text">
-      전화번호:</br>
-      <%= f.text_field :phone, placeholder: "*numbers only" %><br />
-    </p>
-    <p id="text">
       이메일:</br>
       <%= f.text_field :email,:required => true  %><br />
     </p>
@@ -23,12 +33,18 @@
     </p>
     <p id="text">
       소속교회:</br>
-      <%= f.select :church, church, { include_blank: true } %>
+      <%= f.text_field :church, :id=>"tags" %>
     </p>
+
     </br>
       <%= f.submit '등록', {:class => "button btn btn-lg btn-success", :id=>"button"} %>
 
     <% end %>
   </div>
+
+</div>
+
+
+
 
 </div>
