@@ -1,17 +1,17 @@
 <div class="">
+  <div class="content_index content_thankyou">
+    <span id="message_index">
+      환영합니다!</br>간단한 정보를 입력해주세요.
+    </span>
 
-<div class="content_index content_thankyou">
-  <span id="message_index">
-    환영합니다!</br>간단한 정보를 입력해주세요.
-
-  </span>
-
-  <div class="index">
-    <div class="bottom"><%= link_to '입력하기!', new_post_path,{:class=>"button btn btn-success btn-lg", :style=>"margin-left:100px;"} %></div>
+    <div class="index">
+      <div class="bottom">
+        <%= link_to '입력하기!', new_post_path, {:class=>"button btn btn-success btn-lg", :style=>"margin-left:100px;"} %>
+      </div>
+    </div>
   </div>
-</div>
 
-<div class="">
-  <%= link_to 'Log', posts_log_path %>
-</div>
+  <div class="">
+    <%= link_to 'Log', posts_log_path %>
+  </div>
 </div>
